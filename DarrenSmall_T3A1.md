@@ -66,7 +66,7 @@ These four technologies work together to create a three tier architecture patter
     - Client Side Structure: The client file directory will contain all files and code relating to the front end tier of the application. These could be in a structure like this:
         - Client directory:
             - public folder: This contains files relating to images, fonts and HTML. The index.html file would be located here which is the entry point for React.js.
-            - src folder: This file contains the main source code for the front end of the application. Its sub folders & files could be:
+            - src folder: This file contains the main source code for the front end of the application. Its sub folders & files would be:
                 - components: Contains reusable UI components for use across multiple application pages.
                 - pages: Each application page can have its own designated folder here with code and logic specific for that page.
                 - services: This file will contain all files and code used for services like API functionality and data fetching.
@@ -75,6 +75,34 @@ These four technologies work together to create a three tier architecture patter
                 - index.js file: React.js uses this file for rendering and mounting it into the DOM.
                 - .env file: This file contains the environment specific configurations. For EG; database credentials, API Keys.
                 - package.json file: This file can be used for adding & running scripts for testing and starting the server.
-    - Server Side Structure: The server file directory will contain all files and code relating to the back end tier of the application. These could be in a structure like this:
+    - Server Side Structure: The server file directory will contain all files and code relating to the back end tier of the application. These would be in a structure like this:
         - Server directory:
-            - config: 
+            - config: This holds the back end configuration files, such as environment variables and database connection settings.
+            - controllers: This folder will contain the files for each controller route which conatins the logic for handling http requests and data processing.
+            - models: Database schemas can be contained in this folder. Each model file contains specific data structure and controls the interactions with the database.
+            - routes: The applications API routes are located in this folder. These files are responsible for defining each routes endpoints, mapping them to the correct controller functions and handling the request authentication and validation.
+            - server.js file: This is the back end entry point for the Express server and establishing the middleware configs and database connections.  
+            
+References:
+
+MongDB. 2024. MERN Stack Explained. [Online]
+Available at: https://www.mongodb.com/resources/languages/mern-stack
+
+Amankwah, K. 2023. MERN Stack Project Structure: Best Practices [Online]
+Available at: https://dev.to/kingsley/mern-stack-project-structure-best-practices-2adk
+
+Alwis, L. 2023. Structuring Your MERN Stack Project: Best Practices and Organization [Online]
+Available at: https://masterlwa.medium.com/structuring-your-mern-stack-project-best-practices-and-organization-5776861e2c92
+
+## Question 4 Answers:
+In developing a website for a small business the team will need the following knowledge and skills to develop the project:
+
+1. Client Interaction, Research and Planning:
+    - 
+2. Designing:
+    - 
+3. Building and Maintaining:
+    -
+4. Testing:
+    - 
+5. Communication and Teamwork:
