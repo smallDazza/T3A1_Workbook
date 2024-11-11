@@ -52,4 +52,29 @@ Available at: https://www.lastingdynamics.com/blog/software-quality-8-approaches
 
 ## Question 3 Answers:
 A standard high level structure of a MERN stack application would be as follows:
-- Overview: A MERN stack application is a 
+- Overview: A popular full stack used for web applications is a MERN stack. This is a powerful javascript stack which allows developers to build scalable web applications and contains the four technologies of MongoDB, Express.js, React.js and Node.js.
+These four technologies work together to create a three tier architecture pattern called Model View Controller (or MVC). The Model component is the database tier for managing and storing data. The View is the component for displaying the data or front end tier. The Controller is the back end tier and component used for handling user input and updating both the Model & View components as required. All techs use javascript & JSON format which all combine together as in this image and explanation:
+    - ![MERN Stack](./images/MERN%20stack.png)
+    - Front End Tier;
+        - React.js: React is a javascript library that allows developers to build front end user interfaces (UIs) for web applications. It does this by using individual pieces called components, written in javascript, and then combined to render and update as the applications data changes. 
+    - Back End Tier;
+        - Express.js and Node.js: These both use javascript and work together by running the Express framework inside a Node server. Node.js is used to create a server side environment which will offer back end application functionalities like creating API's, automation & scripting and real time streaming app services etc. Express is a small framework that sits on top of Node.js and enables web application functionality to handle a variety of different HTTP requests. Express also is customisable and permits integration tools and features from other third parties. Both these combined create a seamless back end connectivity environment that is highly scalable and effiicent. 
+    - Database Tier;
+        - MongoDB: Is a NoSQL database where data is stored in flexable JSON like documents. This document model maps to javascript objects in the applications code. So user JSON documents created in the React.js front end UI can be sent to the server and provided they are valid, will be processed by Express.js and stored directly in the MongoDB database where they can be retrieved later when required.
+
+- MERN Stack Project Structure: Project structure using the MVC architecture pattern is organised in a way that separates the front end code from the back end code. Doing this creates a well organised and maintainable project code structure that improves readability for time saving development but also allows greater future scalability. This is done by creating separate directories for both client side and server side components.
+    - Client Side Structure: The client file directory will contain all files and code relating to the front end tier of the application. These could be in a structure like this:
+        - Client directory:
+            - public folder: This contains files relating to images, fonts and HTML. The index.html file would be located here which is the entry point for React.js.
+            - src folder: This file contains the main source code for the front end of the application. Its sub folders & files could be:
+                - components: Contains reusable UI components for use across multiple application pages.
+                - pages: Each application page can have its own designated folder here with code and logic specific for that page.
+                - services: This file will contain all files and code used for services like API functionality and data fetching.
+                - utils: Any helper or utility files required can be placed in this folder.
+                - App.js file: This file is a container for global initialisation and routing by React.js.
+                - index.js file: React.js uses this file for rendering and mounting it into the DOM.
+                - .env file: This file contains the environment specific configurations. For EG; database credentials, API Keys.
+                - package.json file: This file can be used for adding & running scripts for testing and starting the server.
+    - Server Side Structure: The server file directory will contain all files and code relating to the back end tier of the application. These could be in a structure like this:
+        - Server directory:
+            - config: 
