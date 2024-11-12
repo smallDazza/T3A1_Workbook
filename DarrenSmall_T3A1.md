@@ -95,14 +95,39 @@ Alwis, L. 2023. Structuring Your MERN Stack Project: Best Practices and Organiza
 Available at: https://masterlwa.medium.com/structuring-your-mern-stack-project-best-practices-and-organization-5776861e2c92
 
 ## Question 4 Answers:
-In developing a website for a small business the team will need the following knowledge and skills to develop the project:
+There are many different aspects required for developing a website for a small business. Overall the team will need some or all of the following knowledge and skillsets to develop the project:
 
-1. Client Interaction, Research and Planning:
-    - 
-2. Designing:
-    - 
-3. Building and Maintaining:
-    -
-4. Testing:
-    - 
-5. Communication and Teamwork:
+1. Client Requirements and Research :
+    - First steps in any project is a team member(s) will need to have the abilities to sit down and have a meeting with the client and put together a project website brief for meeting all the clients expectations for their website. The planning for this project brief will need to include the following aspects:
+        - Identify the goals and objectives of the website. For example what problems is this website going to resolve ?
+        - The clients website requirements will need to be defined. These will be a list of the clients requirements, user requirements and outcomes, considering any business industry standards, any market research to be conducted, and if required any third party integrations. 
+        - Will need to define the project scope. This project scope is a roadmap of the entire project plan and will include all the functions, contraints and exclusions required.
+2. Project Planning:
+    - The knowledge and skillsets required in this stage are based on the outcomes in step 1, which is to document a project plan. This plan will include important aspects like:
+        - Choosing an appropriate project management methodology that aligns with the project requirements and scope. Will the project be agile or waterfall ? if agile what type of framework will suit the development team, Scrum , Lean or Kanban ?
+        - Performing a project risk assessment is also very important. This will evaluate the likelihood and impact of any potential risks and challenges that could affect the projects succesful outcome, while also developing contingency plans if these were to happen.
+        - Task management and scheduling of the project will enable the team better progress allocation of resources, task completion dates, estimation of task outcomes and an overall tracking of the entire project for dev team and client management.      
+3. Legal Obligations & Project Costings:
+    - These next two aspects may or may not be something the actual development team can perform and if not, then outside third party professionals will need to be consulted.  Based on stage twos outcomes the costings will need to be quoted and provded to the client for projects approval and go ahead. Any legal obligations that the clients business has to conform with will also then have to be reflected and added to the projects planning and scope, as this will reduce or negate any future legalities casued by the clients website. 
+4. Designing:
+    - The dev team will need to have the knowledge and ability to perform the websites UX / UI design. The development team should know the user experience (UX) and user interface (UI) design principles, as this will impact on the users engagement and outcomes. Its important to create a website that is both visually appealing and easy to use.
+    - The dev team will also need to have the skillset of building design charts/diagrams for the project. These are important for the projects requirements and building development for the next stage. Examples of these could be use case diagrams, website flowchart for the processes of the website. Commonly used UML diagrams such as Class diagrams and Sequence diagrams will be required for the actual coding of the project. If the website is storing user data then a ER Diagram will also be needed for the building of the database. 
+5. Building and Maintaining:
+    - This stage is where the developement team members will actually code or build the projects website. The knowledge and skillsets required here by the dev team will be:
+        - Proficiency and skill in programming languages. The developers will need to be proficient in programming languages like HTML, CSS, and JavaScript, as a good understanding of these languages is essential for creating and maintaining the website.
+        - Knowledge of frameworks and libraries. Besides the programming languages, the developers should be familiar with frameworks and libraries like React, Angular, or Svelte. These tools make it easier to develop and can help the development team save time and effort on building the website.
+6. Testing:
+    - The dev team here will require testing and debugging skills. Before going live and releasing to the client, developers will be required to test and debug their code to ensure the website functions correctly. This requires attention to detail and the ability to identify and fix errors in the code.
+7. Communication and Teamwork:
+    - Overall the knowledge here for the development team as a whole, and also as individuals, will need to work collaboratively as a team. Team members should have strong communication and teamwork skills. They should be able to work in a team environment but also trusted and the abilities to work alone on tasks as required.
+
+References:
+
+Katz, I. 2024. Website Design For Small Business: The Ultimate Guide. [Online]
+Available at: https://www.web4business.com.au/portfolio-item/website-design-for-small-business-guide/
+
+Nova, S. 2023. 7 Must-Have Skills for Building a Winning Website: A Developer's Guide [Online]
+Available at: https://www.linkedin.com/pulse/7-must-have-skills-building-winning-website-developers-guide
+
+## Question 5 Answers:
+The knowledge and skills required for a work project I was invloved in and the challenges i had to overcome  
