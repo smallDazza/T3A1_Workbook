@@ -130,4 +130,21 @@ Nova, S. 2023. 7 Must-Have Skills for Building a Winning Website: A Developer's 
 Available at: https://www.linkedin.com/pulse/7-must-have-skills-building-winning-website-developers-guide
 
 ## Question 5 Answers:
-The knowledge and skills required for a work project I was invloved in and the challenges i had to overcome  
+The knowledge and skills required for a work project I was invloved in and the challenges I had to overcome are mentioned below:
+- The Work Project: A couple of years ago in the current company I am employed with, I was asked to join the product management team to work on a new project of building a new cloud software application based on the companies current dot net windows software application.
+- Knowledge & Skills Required: The knowledge and skills required for my part in the project was the following:
+    1. Software workflow knowledge of the current application and how this will need to be similarly transitioned across to the new cloud application.
+    2. Documentation skills for the workflow of the new cloud application and how this can be improved, based on current software application customer feedback and complaints.
+    3. Based on the knowledge of current software application UI / UX design, contribute to the design and documentation of the new cloud applications UI / UX features.
+    4. Knowledge of the current third party software integration partners and how the data from these interact with the data of our current software application.
+    5. Document, advise and improve on how the data from these software integration partners will be handled in the new cloud application.
+    6. Task management program knowledge and skill that the development team were using, which was the Atlassian program of Jira. 
+    7. Communication skills in both writing and speaking with meetings of the different groups invloved in the project being the Dev team, company management, integration partners and customers involved in beta testing.
+    8. Team work knowledge and skill to work together with all the different aspects and personalities that come with multiple different team members to see the project outcomes achieved in the project areas I was invloved in. 
+- Challenges To Overcome: With my background being from leading the current software training team and managing client software requests there were a number of new challenges I had to work through in my new role on the project management team. These were:
+    1. Documentation: Specifically researching and learning how to document the workflow for the new cloud application, by the way of diagrams & charts, so the dev team would be able to interpret these correctly. These mostly were UML software behavioral diagrams such as use case, activity diagrams and flowchart diagram.
+    2. Design: This was the most challenging aspect for me, as I had never been involved in any sort of designing features or UI / UX design and functionality before. Therefore i was more like a junior in helping in this area and took my instructions and learning from more experienced team members. The areas mostly helped out with here were the initial cloud applications site mapping and appliction page wire frame layouts to be very similar or improved on from the current software.
+    3. Integration Data: A couple of our integration partners advised our dev team that they had now created and developed new API endpoints for our software to use and move away from the current SQL database connections our current software was using. So the project manangement and dev teams decided to incorporate these new endpoints into the new cloud application. Having at the time no software developemnt or coding experience, the only understanding I had (from just years of experience) was the basic SQL data fields & formats used for these integration partners. So this was another on the job challenge and learning from the dev team members of how to use the Postman and swagger programs to check the API endpoint data we were given access to, was correct for use in the cloud application.
+
+## Question 6 Answers:
+
