@@ -216,7 +216,7 @@ These statements evaluate a certian condition or set of conditions and then exec
 
 - **Iteration statements.**
 
-These statements are usually referred to as loop statements and execute code repetitively until either one or more conditions are met, or no longer met, depending on the type of loop statement used. Loop statements interupt the top to bottom code execution, until the loop ends, then the control flow again executes the next statements after the loop. The types of iteration statements are:
+These statements are usually referred to as loop statements and execute code repetitively until either one or more conditions are met, or no longer met, depending on the type of loop statement used. Loop statements interupt the top to bottom code execution, until the loop ends, then the control flow again executes the next statements after the loop. Here are some of the most used types of iteration statements:
 
 ```
 - For Loop: this is the most common type of loop for repeating code a known number of times, while a condition is true. Its syntax is to use the word for, then inside a set of parentheses, has these 3 sets of expressions:
@@ -242,7 +242,37 @@ These statements are usually referred to as loop statements and execute code rep
     }
 ```
 ```
-- Do While Loop: 
+- Do While Loop: This is simply a different variety of while loop with the difference being the condition to be evaluated is at the end of the loop. This means one loop iteration is always completed before the condition is evaluated. The syntax for this is the addition of the do word, with the same while loop syntax but in different positions, an example in code like this:
+
+    let countNumber = 0;
+
+    do {
+      console.log( `Number is ${ countNumber }.` );
+      countNumber++;
+    }
+    while( countNumber < 4 );
+        
+```
+References:
+
+Codeguage. 2024. JavaScript Control Flow [Online]
+Available at: https://www.codeguage.com/courses/js/control-flow
+
+Cleary, R. 2020. Control Flow in Javascript [Online]
+Available at: https://medium.com/@rianna.cleary/control-flow-in-javascript-9c63d0c98bb9
+
+Web.dev, 2024. javascript Control flow [Online]
+Available at: https://web.dev/learn/javascript/control-flow
+
+## Question 8 Answers:
+Type coercion in the Javascript language is its ability to convert values from one type to another, such as number to string, string to number, boolean to number etc. Because javascript is a loosley typed language, it is always looking to help out or find common ground when the code has different types of data brought together.This process to transform types can happen in two different ways by implicit coercion or explicit coercion:
+
+**Implict Coercion.**
+    - This is where javascript does the type coercion automatically behind the scenes. 
+
+**Explicit Coercion.**
+    - 
+
 
 
 
