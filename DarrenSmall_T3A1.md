@@ -163,4 +163,93 @@ In the above project mentioned to evaluate the effectiveness of my knowledge and
     - An improvement here would be always to increase and move forward with personal communication skills and even further to develop and train for leadership skills. This is a skill we can always improve on to meet the challenges of working within a team where a wide range of different people and their personalities are involved and team leadership would always be a desireable for any future similar projects.
 
 ## Question 7 Answers:
-Control flow in the Javascript language is done with the following statements: 
+Control flow in the Javascript language is the order in which the interpreter executes statements. Code is executed from top to bottom unless a / set of statement(s) changes the control flow. This control flow is divided into two main control flow construct categories of conditional statements and iteration statements: 
+- **Conditional Statements.**
+
+These statements evaluate a certian condition or set of conditions and then execute the code it contains if the evaluated condition(s) equal True, otherwise the code is skipped. The types of conditional statements are:
+
+```
+- If Statement: An if statement evaluates the condition in its parenthesis and if this condition is true, will then execute the following code contained in the curly braces. The code is ignored if the condition evaluates to false. An example of this statement is: 
+
+
+    var isRaining = true;
+    if (isRaining) {
+        alert("Don't forget an umbrella!");
+    }
+```
+```
+- Else Statement: An else statement cannot stand alone, but if required, will follow a preceding if statement. The else statement will only execute the following code when the preceding if statement condition evaluates to false. An example of this statement is:
+
+    var isRaining = true;
+    if (isRaining) {
+        alert("Don't forget an umbrella!");
+    } else {
+        alert("No need for an umbrella.");
+    }
+```
+```
+- Multiple Else, If Statements: To chain multiple if statements together, the next if statement syntax will be expressed by using a combination of else if and then the condition in parenthesis to be evaluated, with the code to be executed in the same curly braces should the condition evaluate to true. The code is ignored if the condition evaluates to false. An example of this statement is: 
+
+    var isRaining = true;
+    if (isRaining) {
+        alert("Don't forget an umbrella!");
+    } else if (isSunny) {
+        alert("Wear a wide hat !")
+    } else {
+        alert("No need for an umbrella or a hat today, just be comfortable!");
+    }
+```
+```
+- Switch Case Statements: similar to else if statements a switch statement can be used to evaluate a condition once and then if any of the following case statements match the condition, that particular case code will be executed. To stop evaluating the swtich body when a case is a match, the break keyword is added after the case code. Should none of the cases be a match then a default statement can be added and its code executed should the switch case statement be undefined. An example of this statement is:
+
+    switch ( 20 ) {
+        case 5:
+            console.log( "The value was five." );
+        break;
+        case 10:
+            console.log( "The value was ten." );
+        break;
+        default:
+            console.log( "The value was something unexpected." );
+    }
+```
+
+- **Iteration statements.**
+
+These statements are usually referred to as loop statements and execute code repetitively until either one or more conditions are met, or no longer met, depending on the type of loop statement used. Loop statements interupt the top to bottom code execution, until the loop ends, then the control flow again executes the next statements after the loop. The types of iteration statements are:
+
+```
+- For Loop: this is the most common type of loop for repeating code a known number of times, while a condition is true. Its syntax is to use the word for, then inside a set of parentheses, has these 3 sets of expressions:
+    1. initialisation: this defines & initialises a variable.
+    2. condition: this must evaluate to true for the code to be executed (loop to continue).
+    3. modification: a expression to be executed at the end of each loop.
+    After this is the code to be executed inside a set of curly braces for each iteration.An example in code of a for loop is:
+
+    const food = ['Pizza', 'Pasta', 'Burgers']
+
+    for (let i = 0; i < food.length; i++) {
+        console.log(food[ i ])
+    }
+```
+```
+- While Loop: this loop will also repeat while a condition is true but not sure how many times to do this. Its syntax is to use the word while, then inside a set of parentheses the condition to be evaluated after each loop, then the code to be executed inside a set of curly braces for each iteration. So long as the condition is true the while loop will keep iterating. An example in code of a while loop is:
+
+    let countNumber = 0;
+
+    while( countNumber < 4 ) {
+        countNumber++;
+        console.log( `Number is ${ countNumber }.` );
+    }
+```
+```
+- Do While Loop: 
+
+
+
+
+
+
+
+
+
+
