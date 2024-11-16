@@ -268,10 +268,98 @@ Available at: https://web.dev/learn/javascript/control-flow
 Type coercion in the Javascript language is its ability to convert values from one type to another, such as number to string, string to number, boolean to number etc. Because javascript is a loosley typed language, it is always looking to help out or find common ground when the code has different types of data brought together.This process to transform types can happen in two different ways by implicit coercion or explicit coercion:
 
 **Implict Coercion.**
-    - This is where javascript does the type coercion automatically behind the scenes. 
+
+- This is where javascript does the type coercion automatically behind the scenes. This happens when operators are applied to values, such as string concatenation of joining string values and number values, and also happens by the surrounding code context, for example in a if statement where the value in parentheses is coerced to a boolean value.
+- **Comparison Operators:** There is a comparison operator that when used will not allow implicit type coercion to happen. The strict equality operator of ' === ' will not allow this to happen. But on the other hand if using the loose equality operator of ' == ', this will be different and allow type coercion and comparison if required. Therefore in most cases it is recommended to use the strict equality operator and reduce surprising outcomes in code output.
+
+A code example of implicit coercion:
+```
+    let number = 55;
+    let result = "Your number is: " + number;
+    console.log(result);
+    // the result is all as a string:  "Your number is: 55"
+```
 
 **Explicit Coercion.**
-    - 
+- This is where the developer explicitly in code uses javascripts built in functions to intentionally convert the types. This is most useful when the developer does not know the type of a value the code is expecting, like for example data coming from an API. Some of these javascript functions to explicitly convert are:
+    - To a string type: String()
+    - To a number type: Number()
+    - To a boolean type: Boolean()
+
+For example using a number value expected from an API, could be as a string type. So to then use this number with other number types in the code, the Number() will need to be used to explicitly coerce the string to a number.EG:
+```
+const apiNumData = {
+    value: "250"
+}
+
+const myNum = 100;
+const value = Number(apiNumData.value);
+result = myNum + value;
+console.log(result)
+// the result is: 350
+// because the "250" string type is explicitly coerced to a number type using the Number().
+```
+References:
+
+Rahman, S. 2024. Type Coercion in JavaScript: A Comprehensive Guide [Online]
+Available at: https://www.linkedin.com/pulse/type-coercion-javascript-comprehensive-guide-shourav-rahman-faelc
+
+freeCodeCamp. 2022. Coercion and Type Conversion in JavaScript [Online]
+Available at: https://www.freecodecamp.org/news/coercion-and-type-conversion-in-javascript/
+
+## Question 9 Answers:
+Javascript data types are the different types of data that the code will be working with and storing in variables. Its important to note that in javascript the types are dynamic, meaning the same variable can be used to hold different data types. There are 8 data types in javascript and these are divided into two categories of primitive and non primitive data types.
+
+**Primitive Data Types:** These are predefined by the javascript language and can hold a single value, also be known as in built data types.
+
+ - Number: this number data type uses a unified approach for all numeric values. It uses the numeric type double-precision 64-bit binary format IEEE 754, which means there is only one numeric type used, no difference between a integer and float types. An example of this is:
+ ``` 
+    // With decimals:
+    let x = 34.50;
+
+    // Without decimals:
+    let y = 34;
+```
+ - String: this data type is a sequence of characters mostly used to represent text. The syntax for a string is to use either single or double quotes and like other programming languages the string data type is immutable. An example of this is:
+ ```
+    // Using double quotes:
+    let carName1 = "Ford Ranger is a great 4WD";
+
+    // Using single quotes:
+    let carName2 = 'Ford Ranger is a great 4WD';
+```
+ - Boolean: this data type represents true or false values. The value of '0', 'NaN', an empty string, 'undefined', and 'null' are all treated as boolean false values. Number values other than 0, non empty strings, a variable or object that has a value are all treated as boolean true values. An example of this is:
+ ```
+    let x = 5;
+    let y = 5;
+    let z = 6;
+    (x == y)    // Returns true
+    (x == z)    // Returns false
+```
+ - BigInt: this data type is used to store big number values that are to big for the number data type. The number data type is only accurate up to a total of 15 digits, numbers bigger than this will require the BigInt data type. The syntax for this is either append a 'n' to the end of a number or use the BigInt(). An example of this is:
+ ```
+    let x = 1234567890123456789012345n;
+    let y = BigInt(1234567890123456789012345)
+```
+ - null: the null data type represents the absense of any value or is used as a placeholder for an object value that is not present as yet. An example of this is:
+ ```
+    const test = null;
+    if (test) {
+    console.log("test is not null");
+    } else {
+    console.log("test is null");
+    }
+    // the result is: "test is null"
+```
+ - Undefined:
+ - Symbol:
+
+ **Non Primitive Data Types:** These are derived from primitive data types and can hold multiple values.
+
+ - Object:
+
+
+
 
 
 
