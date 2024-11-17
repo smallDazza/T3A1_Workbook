@@ -351,12 +351,146 @@ Javascript data types are the different types of data that the code will be work
     }
     // the result is: "test is null"
 ```
- - Undefined:
- - Symbol:
+ - Undefined: this data type in javascript is by default assigned when a variable is declared and not initialised or not assigned a value. Functions can also return a undefined value, if a variable was assigned to that function and the function does not return any value, the variable will be assigned a undefined value. Examples of these:
+ ```
+    let variable = undefined;
+    // or
+    let x; 
+    // both will contain a undefined value.
+```
+```
+    function hello(name) {
+        console.log(`hello ${name}`);
+    }
+    x = hello('Mike');
+    console.log(x);
+    // the x variable will be assigned a undefined value because the function does not return anything
+```
+ - Symbol: this data type is unique and immutable and can be used to add a unique property key value to an object. Because it is unique this will not collide with any other keys that could be added to the object. The syntax to create a symbol is Symbol() which can also pass a optional string value. An example is:
+ ```
+    let value1 = Symbol("value");
+    let value2 = Symbol("value");
+    console.log(value1 === value2); 
+    // this results in false
+```
 
  **Non Primitive Data Types:** These are derived from primitive data types and can hold multiple values.
 
- - Object:
+ - Object: this data type is a data structure and used to store data collections. The data is stored as key value pairs where each key is a unique identifier for its assigned value. These objects can have there properties added, changed or deleted at runtime which makes them dynamic. The syntax to create an object is by using curly braces to define the object and initialising the properties as key value pairs, separated by a comma.EG:
+ ```
+    let obj = {
+    name: "Mike",
+    age: 28,
+    job: "Developer"
+    };
+    console.log(obj);
+    // the result is { name: "Mike", age: 28, job: "Developer" }
+```
+- The same object can be created by also using the Object():
+```
+    let obj = new Object();
+    obj.name= "Mike",
+    obj.age= 28,
+    obj.job= "Developer"
+
+    console.log(obj); 
+```
+- Object; 'Array': another special kind of object is an array. This is used to store an ordered collection of values and can be of any data type. The syntax for an array is using square brackets [], with values separated by a comma.EG:
+```
+    let x = [1, 2, 3, 4, 5, "one", "two", "three"];
+    console.log(x);
+    // result is [1, 2, 3, 4, 5, "one", "two", "three"]
+```
+References:
+
+Programiz. 2024. JavaScript Data Types [Online]
+Available at: https://www.programiz.com/javascript/data-types
+
+GeeksforGeeks. 2024. JavaScript Data Types [Online]
+Available at: https://www.geeksforgeeks.org/javascript-data-types/
+
+Shiksha. 2023. Introduction to JavaScript Data Types With Examples [Online]
+Avialable at: https://www.shiksha.com/online-courses/articles/javascript-data-types-with-examples/#sym
+
+## Question 10 Answers:
+In javascript arrays are dynamic meaning the element values can be changed, removed or new values added once they have been created. Arrays can be manipulated by using many different kinds of methods. These methods can manipulate the existing array they have been called on or some of these methods will return a new array and then populate it with the same or changed elements, keeping the original array but with the new and original array having the same reference. The syntax for using these methods is by after the array name using a dot and the method name with any values in the method parentheses.
+
+**Some of these methods that manipulate the existing/original array are:**
+- .push(): this method is used for appending (adding) a new element value to the end of an array. Example:
+```
+    let evens = [2,4,6,8];
+    evens.push(10);
+    
+    console.log(evens);
+    // result to array is number 10 added to the end: [2,4,6,8,10]
+```
+- .pop(): this method is used for removing the element that is located at the end of the array. Example:
+```
+    let odds = [1,3,5,7];
+    numbers.pop();
+
+    console.log(odds);
+    // the result is number 7 removed: [1,3,5]
+```
+- .splice(): this method can be used for removing elements at a certain location(s) and also adding new elements at the location(s) of the removed elements. Example:
+```
+    let animals = ['whale', 'tiger', 'shark', 'horse', 'bird'];
+    animals.splice(1,3);
+
+    console.log(animals);
+    // result is the elements located at position 1 to 3 ['tiger', 'shark', 'horse'] are removed. The original array is:  ['whale', 'bird']
+
+    // to remove & add to the same array:
+
+    animals.splice(1,3,'cats', 'dogs');
+    
+    console.log(animals);
+    // result is the elements located at position 1 to 3 ['tiger', 'shark', 'horse'] are removed & replace with the element values 'cats', 'dogs'. The original array is now:  ['whale', 'cats', 'dogs', 'bird']
+
+```
+**Some of these methods that will return a new manipulated array (keeping the original) are:**
+- .concat(): this method is used for adding element(s) to the end of an array, including merging two or more arrays together. A couple of example are:
+```
+    let cars = ['ford', 'holden', 'toyota', 'suzuki']
+    let newCars = cars.concat('mazda');
+    console.log(newCars);
+    // result is a new array with: ['ford', 'holden', 'toyota', 'suzuki', 'mazda']
+    // merging 2 or more arrays:
+    const array1 = [1, 2, 3];
+    const array2 = [4, 5, 6];
+    const array3 = [7, 8, 9];
+
+    const mergedArray = array1.concat(array2, array3);
+    // mergedArray is [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+- .map(): this method can be used to transform and return the same number of elements as the original array. Example:
+```
+    const drinks = ['Coca-Cola', 'Pepsi', 'Sprite', 'Creaming soda']
+    drinks.map(newDrinks => {
+        let i = 0
+        if (newDrinks[i] === 'C') {
+            newDrinks = 'Fanta';
+        }
+    console.log(newDrinks)
+    })
+    // the new array returned is:  ['Fanta', 'Pepsi', 'Sprite', 'Fanta']
+    console.log(drinks)
+    // But the original array is still available: ['Coca-Cola', 'Pepsi', 'Sprite', 'Creaming soda']
+```
+- .join(): this method does not return a new array but will join all the elements in the original array and return them as a new string. This method can also take a optional seperator parameter but by default will use a comma as the seperator. Example:
+```
+    const array = ['apple', 'banana', 'orange'];
+    const fruitString = array.join();
+    // result is a string:  'apple,banana,orange'
+
+    // with a seperator as a parameter:
+    const array = [1, 2, 3];
+    const numberString = array.join('-');
+    // result is a string: '1-2-3'
+```
+
+## Question 11 Answers:
+
 
 
 
