@@ -488,8 +488,172 @@ In javascript arrays are dynamic meaning the element values can be changed, remo
     const numberString = array.join('-');
     // result is a string: '1-2-3'
 ```
+References:
+
+Ayodeji, B. 2019. How to Manipulate Arrays in JavaScript [Online]
+Available at: https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/
+
+Yerimah, D. 2023. Array Manipulation: Understanding JavaScript Array Methods [Online]
+Available at: https://hackernoon.com/array-manipulation-understanding-javascript-array-methods
+
+Mdn web docs. 2024. Javascript Array [Online]
+Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 ## Question 11 Answers:
+As mentioned in question 9 an object is a collection of key value pair properties. There are many ways to manipulate a object:
+1. You can use the dot or bracket notation (the same as when accessing the value of a property) to either set new or update existing properties.
+2. To delete object properties the 'delete' operator can be used.
+3. Then javscript also provides many built in methods which can perform actions on a objects properties. The syntax to access these object methods is: objectName.methodName(params).
+
+    1. Examples using the dot or bracket notation to set new properties or update existing properties:
+    ```
+        let person = {
+            name: "Peter",
+            age: 28,
+            gender: "Male"
+        };
+
+        // Setting a new property with dot notation:
+        person.country = "Australia";
+        console.log(person.country); 
+        // result is: Australia
+        // Setting a new property with bracket notation:
+        person["email"] = "peterparker@email.com";
+        console.log(person.email); 
+        // result is: peterparker@email.com
+
+        // Updating existing property with dot notation:
+        person.age = 30;
+        console.log(person.age); 
+        // result is: 30
+        // Updating existing property with bracket notation:
+        person["name"] = "Peter Parker";
+        console.log(person.name); 
+        // result is: Peter Parker
+    ```
+    2. Examples to delete a objects properties using the delete operator:
+    ```
+        let person = {
+            name: "Peter",
+            age: 28,
+            gender: "Male",
+        };
+
+        // Deleting a property :
+        delete person.age;
+        console.log(person.age); 
+        // result because the property deleted: undefined
+    ```
+    3. Calling a objects method can be done using the dot notation. Examples:
+    - a method or function inside a object:
+    ```
+    let person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male",
+        displayName: function() {
+            alert(this.name);
+        }
+    };
+
+    person.displayName(); 
+    // Outputs: Peter
+    ```
+    - In javascript there are many object methods to use to manipulate objects, some of them are:
+        Object.keys() ,
+        Object.values() ,
+        Object.entries() ,
+        Object.fromEntries() ,
+        Object.assign() ,
+        Object.seal() ,
+        Object.freeze() ,
+        Object.preventExtensions() ,
+        Object.isSealed() ,
+        Object.isFrozen() ,
+        Object.isExtensible() ,
+        Object.is() ,
+    - Example1: using the Object.assign() , this copies all properties across from one or more objects to be combined in a new object:
+    ```
+    const person1 = {
+        name: "Mike",
+        age: 25,
+        city: "Sydney",
+    };
+
+    const person2 = {
+        country: "Australia",
+    };
+
+    const person3 = Object.assign(person1, person2);
+
+    console.log(person3); 
+    //result is a new combined object: { name: 'Mike', age: 25, city: 'Sydney', country: 'Australia' }
+    ```
+    - Example2: using the Object.freeze() , this method freezes an object which prevents neww property additions, prevents existing properties from being deleted or edited. Essentially this makes the object immutable:
+    ```
+    const person1 = {
+        name: "Mike",
+        age: 25,
+        city: "Sydney",
+    };
+
+    Object.freeze(person1);
+
+    person1.country = "Australia";
+    person1.name = "Peter";
+    delete.person1.city;
+
+    console.log(person1);
+    //result is the same immutable object: { name: 'Mike', age: 25, city: 'Sydney' }
+    ```
+References:
+
+Tutorialrepublic. 2024. JavaScript Objects [Online]
+Available at: https://www.tutorialrepublic.com/javascript-tutorial/javascript-objects.php
+
+Ashiq, M. 2023. Object Manipulation [Online]
+Available at: https://dev.to/mrizwanashiq/object-manipulation-1dh6
+
+Singh, G. 2021. Objects manipulation in Javascript (tutorial) [Online]
+Available at: https://medium.com/@gurpreet212004/objects-manipulation-in-javascript-tutorial-8dfe5f95c2f5
+
+## Question 12 Answers:
+The JSON format is a text format representing data structured in a key value pair format and based on the javascript language hence why its is called Javascript Object Notation. JSON can be manipulated by the javascript language as its syntax is similar to javascript objects with some differences where the JS objects keys are not strings in quotes, where JSON keys are. Again javascript has some JSON methods that allow the manipulation of the JSON format in & out of javascript objects, then the object data can be manipulated as required using the javascript langauge. Some example are:
+
+1. To manipulate JSON format into a JS object we use the JSON.parse(). This method will parse all JSON data into a javascript object, where it can be accessed and modified as required by the javascript language. EG:
+    ```
+    const jsonString = '{"name": "John Doe", "age": 25, "isStudent": true}';
+    const jsObject = JSON.parse(jsonString);
+    console.log(jsObject);
+    // result is a JS object: 
+    {
+        name: "John Doe",
+        age: 25,
+        isStudent: true
+    }
+    ```
+2. To convert a javascript object back into a JSON format string we use the JSON.stringify(). This is very useful for transpoorting the data to a server or saving the data locally. EG:
+    ```
+    const jsObject = {
+        name: "Mike Doe",
+        age: 30,
+        isStudent: false
+    };
+    const jsonString = JSON.stringify(jsObject);
+    console.log(jsonString);
+    // the result is a JSON format string: 
+    '{"name":"Mike Doe","age":30,"isStudent":false}'
+    ```
+References:
+
+GeeksforGeeks. 2024. How to Create and Manipulatinag JSON Data in javaScript? [Online]
+Available at: https://www.geeksforgeeks.org/how-to-create-and-manipulatinag-json-data-in-javascript/
+
+CarlosRojasDev. 2024. JavaScript and JSON: Parsing, Stringifying, and Manipulating Data [Online]
+Available at: https://blog.carlosrojas.dev/javascript-and-json-parsing-stringifying-and-manipulating-data-c3c2b406cd1b
+
+Metana. 2024. JavaScript and JSON [Online]
+Available at: https://metana.io/blog/javascript-and-json-examples-in-action/
 
 
 
